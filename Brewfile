@@ -15,6 +15,7 @@ brew 'vim'
 brew 'tmux'
 brew 'CMake'
 brew 'the_silver_searcher'
+brew 'reattach-to-user-namespace'
 brew 'carthage'
 brew 'android-platform-tools'
 

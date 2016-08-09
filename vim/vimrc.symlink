@@ -44,6 +44,7 @@ Plugin 'YankRing.vim'
 Plugin 'rizzatti/dash.vim'
 Plugin 'Shougo/vimproc.vim', { 'do': 'make -f make_mac.mak' }
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " Coding
 Plugin 'SirVer/ultisnips'
