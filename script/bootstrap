@@ -139,6 +139,9 @@ install_dotfiles () {
 
 setup_gitconfig
 install_dotfiles
+info "installing color themes"
+#source theme/install.base16.shell
+source theme/install.powerline.fonts
 
 # If we're on a Mac, let's install and setup homebrew.
 if [ "$(uname -s)" == "Darwin" ]

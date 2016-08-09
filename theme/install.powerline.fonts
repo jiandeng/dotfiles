@@ -1,0 +1,3 @@
+pip install powerline
+git clone https://github.com/powerline/fonts ~/code/github.com/powerline/fonts
+cd ~/code/github.com/powerline/fonts && ./install.sh
