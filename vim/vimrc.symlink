@@ -183,14 +183,13 @@ set gfn=Sauce\ Code\ Powerline\ Light:h12
 set background=dark
 set t_Co=256
 
-"colorscheme base16-solarized
 if has('gui_running')
   set guioptions-=T
   set guioptions-=e
-  colorscheme base16-solarized
+  colorscheme base16-solarized-dark
 else
   let base16colorspace=256
-  colorscheme base16-solarized
+  colorscheme base16-solarized-dark
 endif
 
 " Set utf8 as standard encoding and en_US as the standard language
@@ -792,3 +791,15 @@ nmap <leader>gn <Plug>GitGutterNextHunk
 
 "" Base16 Theme
 let g:base16_shell_path='~/code/github.com/chriskempson/base16-shell/'
+
+"" NerdCommenter
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+" Set a language to use its alternate delimiters by default
+" let g:NERDAltDelims_c = 1
+" Add your own custom formats or override the defaults
+" let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
