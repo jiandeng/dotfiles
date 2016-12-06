@@ -1,4 +1,4 @@
-pip install --user powerline-status
+# pip install powerline-status --user
 if [ ! -s ~/.code/github.com/powerline/fonts ]; then
   git clone https://github.com/powerline/fonts ~/.code/github.com/powerline/fonts
 fi
