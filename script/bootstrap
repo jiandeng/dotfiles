@@ -139,6 +139,8 @@ install_dotfiles () {
 
 setup_gitconfig
 install_dotfiles
+info "installing prezto"
+source zsh/install.zprezto
 info "installing vim vundle"
 source vim/install.vundle
 info "installing color themes"
