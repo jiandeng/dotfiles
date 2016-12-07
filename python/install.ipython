@@ -1,7 +1,7 @@
 # Altair for daclarative visualization
 # Bokeh for interactive visualization
 # It would be great if altair talks to bokeh
-pip install ipython jupyter jupyterlab altair bokeh
+pip install ipython jupyter jupyterlab altair bokeh ggplot
 jupyter nbextension install --sys-prefix --py vega
 jupyter serverextension enable --py jupyterlab --sys-prefix
 
