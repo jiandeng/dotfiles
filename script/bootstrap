@@ -148,9 +148,8 @@ source theme/install.base16.shell
 source theme/install.powerline.fonts
 info "installing python tools"
 source python/install.ipython
-
-# info "installing tmuxinator"
-# source tmux/install.tmuxinator
+info "installing tmuxinator"
+source tmux/install.tmuxinator
 
 # If we're on a Mac, let's install and setup homebrew.
 if [ "$(uname -s)" == "Darwin" ]
