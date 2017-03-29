@@ -3,6 +3,7 @@
 # It would be great if altair talks to bokeh
 pip install ipython jupyter jupyterlab altair bokeh pillow pyqrcode pypng python-escpos --user
 pip install ggplot --user
+pip install plotly --user --upgrade
 jupyter nbextension install --user --py vega
 jupyter serverextension enable --py jupyterlab --user
 
