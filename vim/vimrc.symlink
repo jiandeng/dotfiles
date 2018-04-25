@@ -46,6 +46,7 @@ Plugin 'rizzatti/dash.vim'
 Plugin 'Shougo/vimproc.vim', { 'do': 'make -f make_mac.mak' }
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'DoxygenToolkit.vim'
 
 " Coding
 Plugin 'SirVer/ultisnips'
@@ -768,6 +769,9 @@ set statusline+=%*
 "let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+"" Doxygen Tool
+nmap <leader><leader>x :Dox<CR>
 
 "" Hex Manager
 map <leader><leader>hm <Plug>HexManager
