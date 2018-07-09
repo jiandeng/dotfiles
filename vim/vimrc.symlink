@@ -246,6 +246,8 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
+set clipboard=unnamed "clipboard
+
 
 """"""""""""""""""""""""""""""
 " => Visual mode related
