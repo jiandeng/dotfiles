@@ -5,6 +5,10 @@ if [ "$(uname -s)" == "Darwin" ]; then
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   fi
 
+  if [ ! -s /usr/local/bin/pip ]; then
+    ln -s /usr/local/bin/pip3 /usr/local/bin/pip
+  fi
+
   brew install git vim ack tmux
   chsh -s /bin/zsh
 else

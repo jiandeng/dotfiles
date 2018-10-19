@@ -1,9 +1,6 @@
 # Altair for daclarative visualization
 # Bokeh for interactive visualization
 # It would be great if altair talks to bokeh
-pip install ipython jupyter jupyterlab altair bokeh pillow pyqrcode pypng python-escpos --user
-pip install ggplot --user
-pip install plotly --user --upgrade
-jupyter nbextension install --user --py vega
-jupyter serverextension enable --py jupyterlab --user
-
+pip install ipython pillow pyqrcode pypng python-escpos
+pip install plotly --upgrade
+pip install "notebook>=5.3" "ipywidgets>=7.2"
