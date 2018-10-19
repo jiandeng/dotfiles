@@ -1,4 +1,6 @@
-sudo gem install tmuxinator
+if [ ! -x "$(command -v tmuxinator)" ]; then
+  sudo gem install tmuxinator
+fi
 # tmuxinator new [project]
 # tmuxinator open [project]
 # layout e72a,272x59,0,0{135x59,0,0,33,136x59,136,0[136x29,136,0,34,136x29,136,30,35]}
