@@ -9,7 +9,7 @@ if [ "$(uname -s)" == "Darwin" ]; then
     ln -s /usr/local/bin/pip3 /usr/local/bin/pip
   fi
 
-  brew install git vim ack tmux
+  brew install git vim ack tmux cmake
   chsh -s /bin/zsh
 else
   sudo add-apt-repository ppa:aacebedo/fasd
