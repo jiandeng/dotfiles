@@ -1,6 +1,7 @@
 # Altair for daclarative visualization
 # Bokeh for interactive visualization
 # It would be great if altair talks to bokeh
+pip install numpy pandas funcy gevent hyper
 pip install ipython pillow pyqrcode pypng python-escpos
 pip install plotly --upgrade
 pip install "notebook>=5.3" "ipywidgets>=7.2"
