@@ -14,7 +14,7 @@ if [ "$(uname -s)" == "Darwin" ]; then
 else
   sudo add-apt-repository ppa:aacebedo/fasd
   sudo apt-get update
-  sudo apt-get install fasd
+  sudo apt-get install fasd ack-grep
   sudo apt-get install colordiff git vim zsh wget curl python-pip python-dev python-tk cmake build-essential tmux ruby libbluetooth-dev
   pip install pybluez
   chsh -s /usr/bin/zsh
