@@ -799,11 +799,11 @@ map <Leader><leader>hf <Plug>HexFind
 nmap <leader><leader>d <Plug>DashSearch
 
 "" Git Gutter
-nmap <leader>gt <Plug>GitGutterToggle
-nmap <leader>gs <Plug>GitGutterStageHunk
-nmap <leader>gu <Plug>GitGutterUndoHunk
-nmap <leader>gp <Plug>GitGutterPrevHunk
-nmap <leader>gn <Plug>GitGutterNextHunk
+nmap <leader>gt <Plug>(GitGutterToggle)
+nmap <leader>gs <Plug>(GitGutterStageHunk)
+nmap <leader>gu <Plug>(GitGutterUndoHunk)
+nmap <leader>gp <Plug>(GitGutterPrevHunk)
+nmap <leader>gn <Plug>(GitGutterNextHunk)
 
 "Rainbow Parentheses"
 let g:rbpt_colorpairs = [
