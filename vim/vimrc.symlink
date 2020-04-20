@@ -67,7 +67,7 @@ Plugin 'airblade/vim-gitgutter'
 "Plugin 'mattn/emmet-vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'iamcco/mathjax-support-for-mkdp'
-Plugin 'iamcco/markdown-preview.vim'
+Plugin 'iamcco/markdown-preview.nvim'
 
 "Plugin 'hail2u/vim-css3-syntax'
 Plugin 'groenewege/vim-less'
