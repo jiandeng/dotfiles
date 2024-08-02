@@ -22,6 +22,7 @@ Plugin 'VundleVim/Vundle.vim'
 " My Bundles here:
 
 " Editor
+Plugin 'dcharbon/vim-flatbuffers'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
@@ -44,9 +45,10 @@ Plugin 'jlanzarotta/bufexplorer'
 Plugin 'YankRing.vim'
 Plugin 'rizzatti/dash.vim'
 Plugin 'Shougo/vimproc.vim', { 'do': 'make -f make_mac.mak' }
-Plugin 'terryma/vim-multiple-cursors'
+Plugin 'mg979/vim-visual-multi'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'DoxygenToolkit.vim'
+Plugin 'altercation/vim-colors-solarized'
 
 " Coding
 Plugin 'SirVer/ultisnips'
@@ -54,7 +56,7 @@ Plugin 'godlygeek/tabular'
 " Plugin 'vim-syntastic/syntastic'
 Plugin 'dense-analysis/ale'
 Plugin 'majutsushi/tagbar'
-Plugin 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer' }
+Plugin 'ycm-core/YouCompleteMe', { 'do': './install.sh --clang-completer' }
 
 " Search
 Plugin 'rking/ag.vim'
@@ -91,7 +93,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'hdima/python-syntax'
 
 " Vim themes
-Plugin 'chriskempson/base16-vim'
+" Plugin 'chriskempson/base16-vim'
 
 " Hex manager
 Plugin 'vim-scripts/hexman.vim'
@@ -186,19 +188,12 @@ set foldmethod=indent
 "Enable syntax hl
 syntax enable
 
+"Color scheme
+colorscheme solarized
+set background=dark
+
 "Set font
 set gfn=Sauce\ Code\ Powerline\ Light:h12
-set background=dark
-set t_Co=256
-
-if has('gui_running')
-  set guioptions-=T
-  set guioptions-=e
-  colorscheme base16-solarized-dark
-else
-  let base16colorspace=256
-  colorscheme base16-solarized-dark
-endif
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf-8
@@ -275,7 +270,7 @@ map <space> /
 map <c-space> ?
 
 " Disable hightlight when <leander><cr> is pressed
-map <silent> <leader><cr> :noh<cr>
+" map <silent> <leader><cr> :noh<cr>
 
 " Smart way to move btw. windows
 map <C-j> <C-W>j
@@ -837,7 +832,7 @@ nmap <leader>gu <Plug>(GitGutterUndoHunk)
 nmap <leader>gp <Plug>(GitGutterPrevHunk)
 nmap <leader>gn <Plug>(GitGutterNextHunk)
 
-"Rainbow Parentheses"
+" Rainbow Parentheses
 let g:rbpt_colorpairs = [
     \ ['brown',       'RoyalBlue3'],
     \ ['Darkblue',    'SeaGreen3'],
@@ -855,13 +850,11 @@ let g:rbpt_colorpairs = [
     \ ['darkred',     'DarkOrchid3'],
     \ ['red',         'firebrick3'],
     \ ]
+
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
-
-"" Base16 Theme
-let g:base16_shell_path='~/.code/github.com/chriskempson/base16-shell/'
 
 "" NerdCommenter
 " Add spaces after comment delimiters by default
@@ -874,3 +867,5 @@ let g:NERDDefaultAlign = 'left'
 " let g:NERDAltDelims_c = 1
 " Add your own custom formats or override the defaults
 " let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+"
+
